@@ -1,0 +1,193 @@
+:root {
+  /* Color Palette - Premium Navy & Gold */
+  --primary-hsl: 215, 70%, 25%;
+  --primary: hsl(var(--primary-hsl));
+  --primary-light: hsl(215, 70%, 35%);
+  --secondary-hsl: 38, 80%, 65%;
+  --secondary: hsl(var(--secondary-hsl));
+  --secondary-dark: hsl(38, 80%, 55%);
+  
+  --bg-hsl: 220, 20%, 97%;
+  --bg: hsl(var(--bg-hsl));
+  --card-bg: #ffffff;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --text-light: #f0f0f0;
+  
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
+  --font-main: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg);
+  color: var(--text-main);
+  margin: 0;
+  padding-top: 80px; /* Space for fixed navbar */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: var(--primary);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  color: var(--secondary) !important;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: var(--text-light) !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--secondary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  border-radius: 0 0 50% 50% / 4rem;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #fff, var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+/* Glassmorphism Cards */
+.card-custom {
+  background: var(--card-bg);
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card-custom:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-custom:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.btn-primary-custom {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(var(--primary-hsl), 0.3);
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(var(--secondary-hsl), 0.4);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 2rem 0;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Utilities */
+.text-gold {
+  color: var(--secondary);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 800;
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--secondary);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}

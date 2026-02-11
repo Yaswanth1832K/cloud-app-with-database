@@ -1,15 +1,55 @@
+# Cloud Academy - Premium Online Learning Platform
 
-**General Notes**
+A high-end, Django-based learning management system featuring a modern Navy & Gold aesthetic and intuitive user experience.
 
-An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
+## 🌟 Premium Features
 
-- If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser
-- Or you could develop the final project locally by setting up your own Python runtime and IDE
-- Hints for the final project are left on source code files
-- You may choose any cloud platform for deployment (default is IBM Cloud Foundry)
-- Depends on your deployment, you may choose any SQL database Django supported such as SQLite3, PostgreSQL, and MySQL (default is SQLite3)
+-   **Modern UI**: Complete redesign with "Navy & Gold" theme, glassmorphism cards, and smooth animations.
+-   **Hero Section**: Engaging landing page with dynamic entry animations.
+-   **Course Catalog**: Beautiful grid layout for browsing courses with detailed cards.
+-   **User-Centric**: Unified layout with consistent navigation and responsive design.
 
-**ER Diagram**
-For your reference, we have prepared the ER diagram design for the new assesement feature.
+## 🚀 Technologies
 
-![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+-   **Backend**: Django, Python
+-   **Frontend**: Bootstrap 4, Custom CSS3 (Variables, Animations)
+-   **Database**: SQLite
+
+## 🛠️ Setup Instructions
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/Yaswanth1832K/tfjzl-final-cloud-app-with-database.git
+    cd tfjzl-final-cloud-app-with-database
+    ```
+
+2.  **Create Virtual Environment**:
+    ```bash
+    python -m venv venv
+    # Windows
+    .\venv\Scripts\activate
+    # Mac/Linux
+    source venv/bin/activate
+    ```
+
+3.  **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Run Migrations**:
+    ```bash
+    python manage.py migrate
+    ```
+
+5.  **Run Server**:
+    ```bash
+    python manage.py runserver
+    ```
+
+6.  **Access App**:
+    Open `http://127.0.0.1:8000/onlinecourse/` in your browser.
+
+---
+
+Designed with ❤️ for a premium learning experience.

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Platform</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cloud Academy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <span class="nav-link">Welcome, </span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ml-2" href="/onlinecourse/logout/">Logout</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        
+<div class="container py-5 mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <!-- Course Header -->
+            <div class="card card-custom mb-5">
+                <div class="card-body text-center py-5">
+                    <img class="img-fluid rounded mb-4 shadow" src="/course_images/cloud.jpg"
+                        alt="Intro to Cloud Computing" style="max-height: 300px; object-fit: cover;">
+                    <h1 class="display-4 font-weight-bold text-primary mb-3">Intro to Cloud Computing</h1>
+                    <p class="lead text-muted">Learn the basics of cloud infrastructure.</p>
+                    <div class="mt-4">
+                        <span class="badge badge-pill badge-warning p-2 px-3 mr-2 shadow-sm"
+                            style="font-size: 1rem; color: var(--primary); background-color: var(--secondary);">
+                            👥 122 Students Enrolled
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lessons & Content -->
+            <div class="card card-custom mb-5">
+                <div class="card-header bg-transparent border-0 py-3">
+                    <h3 class="mb-0 text-primary font-weight-bold ml-2">📚 Course Content</h3>
+                </div>
+                <div class="collapse show" id="exam">
+                    <div class="card-body pt-0">
+                        
+                        <div class="card mb-3 border-0 shadow-sm hover-lift"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <div class="card-body d-flex align-items-center">
+                                <div class="mr-4 text-center" style="min-width: 60px;">
+                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center shadow-sm"
+                                        style="width: 50px; height: 50px; font-weight: bold; font-size: 1.2rem;">
+                                        1
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1 text-dark font-weight-bold">Introduction to Cloud</h5>
+                                    <p class="mb-0 text-muted small">Cloud computing is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3 border-0 shadow-sm hover-lift"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <div class="card-body d-flex align-items-center">
+                                <div class="mr-4 text-center" style="min-width: 60px;">
+                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center shadow-sm"
+                                        style="width: 50px; height: 50px; font-weight: bold; font-size: 1.2rem;">
+                                        2
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1 text-dark font-weight-bold">Cloud Service Models</h5>
+                                    <p class="mb-0 text-muted small">The three main service models of cloud computing are IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3 border-0 shadow-sm hover-lift"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <div class="card-body d-flex align-items-center">
+                                <div class="mr-4 text-center" style="min-width: 60px;">
+                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center shadow-sm"
+                                        style="width: 50px; height: 50px; font-weight: bold; font-size: 1.2rem;">
+                                        3
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1 text-dark font-weight-bold">Cloud Deployment Models</h5>
+                                    <p class="mb-0 text-muted small">Deployment models include Public Cloud, Private Cloud, Hybrid Cloud, and Community Cloud.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exam Section -->
+            
+            <div class="text-center mb-5">
+                <p class="text-light mb-4">Ready to test your knowledge?</p>
+                <button class="btn btn-primary-custom btn-lg px-5 py-3 shadow-lg pulsing-button" type="button"
+                    data-toggle="collapse" data-target="#exam-section" aria-expanded="false"
+                    aria-controls="exam-section">
+                    📝 Take Final Exam
+                </button>
+            </div>
+
+            <div class="collapse mt-4" id="exam-section">
+                <div class="card card-custom border-0">
+                    <div class="card-header bg-primary text-white py-4 text-center"
+                        style="border-radius: 24px 24px 0 0;">
+                        <h3 class="mb-0 font-weight-bold">🏆 Final Examination</h3>
+                        <p class="mb-0 opacity-75">Good luck!</p>
+                    </div>
+                    <div class="card-body p-5">
+                        <form id="questionform" action="submit/" method="post">
+                            
+                            <p style="display:none">DEBUG_LOOP_ENTRY: What is Cloud Computing?</p>
+                            <div class="card mb-4 border-0 shadow-sm question-card">
+                                <div
+                                    class="card-header bg-white font-weight-bold text-primary border-bottom-0 pt-4 px-4">
+                                    <span class="text-muted mr-2">Q1.</span> {{
+                                    question.question_text }}
+                                </div>
+                                <div class="card-body pb-4 px-4">
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_1" class="custom-control-input"
+                                            id="1" value="1">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="1"
+                                            style="cursor: pointer;">
+                                            On-demand availability of computer system resources
+                                        </label>
+                                    </div>
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_2" class="custom-control-input"
+                                            id="2" value="2">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="2"
+                                            style="cursor: pointer;">
+                                            A type of weather phenomenon
+                                        </label>
+                                    </div>
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_3" class="custom-control-input"
+                                            id="3" value="3">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="3"
+                                            style="cursor: pointer;">
+                                            A hard drive attached to your computer
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <p style="display:none">DEBUG_LOOP_ENTRY: Which of these is a Cloud Service Model?</p>
+                            <div class="card mb-4 border-0 shadow-sm question-card">
+                                <div
+                                    class="card-header bg-white font-weight-bold text-primary border-bottom-0 pt-4 px-4">
+                                    <span class="text-muted mr-2">Q2.</span> {{
+                                    question.question_text }}
+                                </div>
+                                <div class="card-body pb-4 px-4">
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_4" class="custom-control-input"
+                                            id="4" value="4">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="4"
+                                            style="cursor: pointer;">
+                                            HaaS (Hardware as a Service)
+                                        </label>
+                                    </div>
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_5" class="custom-control-input"
+                                            id="5" value="5">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="5"
+                                            style="cursor: pointer;">
+                                            IaaS (Infrastructure as a Service)
+                                        </label>
+                                    </div>
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_6" class="custom-control-input"
+                                            id="6" value="6">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="6"
+                                            style="cursor: pointer;">
+                                            TaaS (Testing as a Service)
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <p style="display:none">DEBUG_LOOP_ENTRY: Which deployment model combines public and private clouds?</p>
+                            <div class="card mb-4 border-0 shadow-sm question-card">
+                                <div
+                                    class="card-header bg-white font-weight-bold text-primary border-bottom-0 pt-4 px-4">
+                                    <span class="text-muted mr-2">Q3.</span> {{
+                                    question.question_text }}
+                                </div>
+                                <div class="card-body pb-4 px-4">
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_7" class="custom-control-input"
+                                            id="7" value="7">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="7"
+                                            style="cursor: pointer;">
+                                            Hybrid Cloud
+                                        </label>
+                                    </div>
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_8" class="custom-control-input"
+                                            id="8" value="8">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="8"
+                                            style="cursor: pointer;">
+                                            Community Cloud
+                                        </label>
+                                    </div>
+                                    
+                                    <div
+                                        class="custom-control custom-checkbox mb-3 p-3 rounded bg-light hover-bg-white transition-all">
+                                        <input type="checkbox" name="choice_9" class="custom-control-input"
+                                            id="9" value="9">
+                                        <label class="custom-control-label w-100 cursor-pointer" for="9"
+                                            style="cursor: pointer;">
+                                            Rain Cloud
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="text-center mt-5">
+                                <input class="btn btn-success btn-lg px-5 rounded-pill shadow-lg" type="submit"
+                                    value="Submit Answers" style="transform: scale(1.1);">
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<style>
+    .hover-lift {
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .hover-lift:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .hover-bg-white:hover {
+        background-color: white !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .pulsing-button {
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+        }
+
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        }
+
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        }
+    }
+</style>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cloud Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

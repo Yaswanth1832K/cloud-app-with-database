@@ -21,8 +21,8 @@ def registration_request(request):
         # Check if user exists
         username = request.POST['username']
         password = request.POST['psw']
-        first_name = request.POST['firstname']
-        last_name = request.POST['lastname']
+        first_name = request.POST['first_name']
+        last_name = request.POST['last_name']
         user_exist = False
         try:
             User.objects.get(username=username)

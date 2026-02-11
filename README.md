@@ -22,8 +22,8 @@ A sophisticated Django-based Learning Management System featuring a premium Navy
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Yaswanth1832K/cloud-academy-lms.git
-cd cloud-academy-lms
+git clone: https://github.com/Yaswanth1832K/cloud-app-with-database.git
+cd cloud-app-with-database
 ```
 
 ### 2. Create Virtual Environment

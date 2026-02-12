@@ -82,7 +82,7 @@ Open your browser and navigate to: `http://127.0.0.1:8000/onlinecourse/`
 ## 📁 Project Structure
 
 ```
-cloud-academy-lms/
+cloud-app-witg-database/
 ├── myproject/              # Django project settings
 ├── onlinecourse/           # Main application
 │   ├── models.py          # Database models (Course, Lesson, Question, etc.)

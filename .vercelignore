@@ -1,0 +1,10 @@
+.vercel
+*.pyc
+__pycache__/
+db.sqlite3
+*.log
+.env
+venv/
+staticfiles/
+media/
+.DS_Store
